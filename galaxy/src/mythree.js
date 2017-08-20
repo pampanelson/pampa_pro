@@ -78,7 +78,7 @@ export function render() {
     }
     // console.log(soundDynamics)
     galaxyMaterial.uniforms.spectrum.value = soundDynamics
-    // mesh.scale.y += Math.sin(time)
+  
     galaxyMaterial.uniforms.time.value += clock.getDelta() / 3.0
     renderer.render(scene, camera)
 }
